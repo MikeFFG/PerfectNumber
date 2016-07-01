@@ -9,7 +9,7 @@ class PerfectNumber
   end
 
   def self.classify(number)
-    raise RuntimeError if number < 0
+    raise RuntimeError if number <= 0
 
     factors = sum_of_factors(number)
     case
